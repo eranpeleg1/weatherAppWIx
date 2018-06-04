@@ -1,0 +1,54 @@
+{
+  "name": "zero-to-platform-app",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "author": {
+    "name": "Mantas Miliukas",
+    "email": "mantasm@wix.com"
+  },
+  "scripts": {
+    "start": "yoshi start",
+    "pretest": "yoshi build",
+    "test": "yoshi test",
+    "posttest": "yoshi lint",
+    "release": "yoshi release"
+  },
+  "devDependencies": {
+    "chai": "~4.1.0",
+    "yoshi": "^1.2.0"
+  },
+  "dependencies": {
+    "prop-types": "~15.6.0",
+    "react": "15.6.1",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "15.6.1",
+    "react-i18next": "~4.8.0"
+  },
+  "yoshi": {
+    "externals": {
+      "react": "React",
+      "react-dom": "ReactDOM"
+    },
+    "entry": {
+      "editor": "editor.js",
+      "viewer": "viewer.js",
+      "settings": "settings.js"
+    },
+    "servers": {
+      "cdn": {
+        "ssl": true
+      }
+    },
+    "hmr": false,
+    "exports": "zero-to-platform-app"
+  },
+  "babel": {
+    "presets": [
+      "wix"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "wix/react"
+  }
+}
