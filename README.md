@@ -5,12 +5,13 @@ This repo is example of quick & easy way to get started writing apps using Santa
 Before you proceed, checkout zero-to-platform-app repo and install dependencies:
 
 ```
-git clone git@github.com:wix-private/zero-to-platform-app.git
+git clone git@github.com:eranpeleg1/weatherAppWIx.git
 npm i
 npm run start
 ```
 
 ### Image
+![Internal fields](docs/images/weather.png)
 
 ### Editor app module
 
